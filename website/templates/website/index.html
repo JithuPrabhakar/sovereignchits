@@ -1,0 +1,380 @@
+{% extends 'website/base.html' %}
+
+{% block title %}Sovereign Chits — Home{% endblock %}
+
+{% block extra_css %}
+      header {
+        background: linear-gradient(
+            135deg,
+            #1e3a8a80 0%,
+            #1e40af80 50%,
+            #3b83f680 100%
+          ),
+          url("/static/assets/images/landing.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+{% endblock %}
+
+{% block content %}
+    <!-- HERO -->
+    <header
+      class="pt-24 pb-16 text-white overflow-hidden relative"
+    >
+      <div class="absolute inset-0 opacity-10">
+        <div
+          class="absolute top-20 left-10 w-72 h-72 bg-blue-400 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-20 right-10 w-96 h-96 bg-cyan-400 rounded-full blur-3xl"
+        ></div>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto px-6 py-12 relative z-10"
+      >
+        <div
+          class="grid md:grid-cols-1 gap-12 items-center justify-center"
+        >
+          <div>
+            <div
+              class="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-6 border border-white/20"
+            >
+              🏆 40+ Years of Trust & Excellence
+            </div>
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6"
+            >
+              Your Financial Growth Partner Since 1983
+            </h1>
+            <p
+              class="text-xl text-blue-100 mb-8 leading-relaxed"
+            >
+              Save wisely. Borrow conveniently. Invest
+              intelligently. Experience the perfect blend of
+              traditional wisdom and modern digital
+              convenience.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a
+                href="{% url 'schemes' %}"
+                class="px-8 py-4 gradient-accent rounded-lg font-bold text-white text-center hover:shadow-2xl transition-all transform hover:scale-105"
+              >
+                Explore Schemes
+              </a>
+              <a
+                href="{% url 'about' %}"
+                class="px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white rounded-lg font-semibold text-center hover:bg-white/20 transition-all"
+              >
+                Learn About Chits
+              </a>
+            </div>
+
+            <!-- Stats -->
+            <div
+              class="grid grid-cols-3 gap-6 mt-12 pt-12 border-t border-white/20"
+            >
+              <div>
+                <div
+                  class="text-3xl font-bold text-amber-300"
+                >
+                  40+
+                </div>
+                <div class="text-sm text-blue-100 mt-1">
+                  Years Experience
+                </div>
+              </div>
+              <div>
+                <div
+                  class="text-3xl font-bold text-amber-300"
+                >
+                  10K+
+                </div>
+                <div class="text-sm text-blue-100 mt-1">
+                  Happy Customers
+                </div>
+              </div>
+              <div>
+                <div
+                  class="text-3xl font-bold text-amber-300"
+                >
+                  100%
+                </div>
+                <div class="text-sm text-blue-100 mt-1">
+                  Transparent
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- WHAT IS A CHIT -->
+    <section
+      class="py-20 bg-gradient-to-b from-white to-blue-50"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <div
+            class="inline-block px-4 py-2 bg-blue-100 rounded-full text-sm font-semibold text-blue-900 mb-4"
+          >
+            Understanding Chit Funds
+          </div>
+          <h2
+            class="text-4xl md:text-5xl font-bold text-blue-900 mb-6"
+          >
+            What is a Chit Fund?
+          </h2>
+          <p
+            class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed"
+          >
+            A chit fund is more than just a way to borrow
+            money, it's a smart and flexible financial
+            system that combines the power of saving,
+            investing, and planning ahead. <br />
+            At Sovereign Chits, we believe a chit is not
+            merely an alternative to a loan, but a
+            disciplined saving habit that can eventually
+            turn into an investment opportunity.
+          </p>
+          <h3
+            class="text-2xl md:text-3xl font-bold text-blue-900 my-6"
+          >
+            Why Chit Fund?
+          </h3>
+          <p
+            class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed"
+          >
+            When you join a chit, you save regularly, build
+            financial discipline, and gain the flexibility
+            to access funds when needed. With thoughtful
+            participation and smart bidding, subscribers can
+            even grow their savings, making chits one of the
+            few financial instruments that balance
+            liquidity, security, and returns. <br />
+            In short, a chit fund helps you save wisely,
+            borrow conveniently, and invest intelligently,
+            all within a trusted and transparent system.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div
+            class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-blue-100"
+          >
+            <div
+              class="w-16 h-16 gradient-primary rounded-2xl flex items-center justify-center text-white text-2xl mb-6"
+            >
+              👨‍👩‍👧‍👦
+            </div>
+            <h3
+              class="text-2xl font-bold text-blue-900 mb-4"
+            >
+              Meet Family Commitments
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Plan weddings, education expenses, home
+              renovations, or any major life event. Get
+              access to funds exactly when you need them
+              most, without the hassle of traditional loans.
+            </p>
+          </div>
+
+          <div
+            class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-blue-100"
+          >
+            <div
+              class="w-16 h-16 gradient-accent rounded-2xl flex items-center justify-center text-white text-2xl mb-6"
+            >
+              📈
+            </div>
+            <h3
+              class="text-2xl font-bold text-blue-900 mb-4"
+            >
+              Grow Your Investments
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Turn small monthly contributions into larger
+              achievements over time. Benefit from
+              competitive returns while maintaining the
+              flexibility to access funds when needed.
+            </p>
+          </div>
+
+          <div
+            class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-blue-100"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center text-white text-2xl mb-6"
+            >
+              💰
+            </div>
+            <h3
+              class="text-2xl font-bold text-blue-900 mb-4"
+            >
+              Disciplined Savings
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Build a strong savings habit with regular
+              monthly contributions. Our structured approach
+              helps you stay committed to your financial
+              goals.
+            </p>
+          </div>
+
+          <div
+            class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-blue-100"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center text-white text-2xl mb-6"
+            >
+              🎯
+            </div>
+            <h3
+              class="text-2xl font-bold text-blue-900 mb-4"
+            >
+              Flexible Access
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Unlike fixed deposits, chit funds offer you
+              the flexibility to bid and access your money
+              when you need it, making it perfect for both
+              planned and unexpected expenses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section
+      class="py-20 gradient-primary text-white relative overflow-hidden"
+    >
+      <div class="absolute inset-0 opacity-5">
+        <div
+          class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"
+        ></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">
+            Why Choose Sovereign Chits?
+          </h2>
+          <p
+            class="text-xl text-blue-100 max-w-2xl mx-auto"
+          >
+            Experience the difference of working with
+            Kerala's most trusted chit fund company
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all"
+          >
+            <div
+              class="w-16 h-16 bg-amber-400 rounded-2xl flex items-center justify-center text-3xl mb-6"
+            >
+              🛡️
+            </div>
+            <h3 class="text-2xl font-bold mb-4">
+              Transparent & Trusted
+            </h3>
+            <p class="text-blue-100 leading-relaxed">
+              Licensed under the Chit Funds Act, 1982.
+              Regulated operations with complete
+              transparency and regular audits for your peace
+              of mind.
+            </p>
+          </div>
+
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all"
+          >
+            <div
+              class="w-16 h-16 bg-amber-400 rounded-2xl flex items-center justify-center text-3xl mb-6"
+            >
+              ⚡
+            </div>
+            <h3 class="text-2xl font-bold mb-4">
+              Flexible Schemes
+            </h3>
+            <p class="text-blue-100 leading-relaxed">
+              Multiple chit plans designed for every
+              financial need and budget. Choose from various
+              durations and amounts that suit your
+              lifestyle.
+            </p>
+          </div>
+
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all"
+          >
+            <div
+              class="w-16 h-16 bg-amber-400 rounded-2xl flex items-center justify-center text-3xl mb-6"
+            >
+              👔
+            </div>
+            <h3 class="text-2xl font-bold mb-4">
+              Professional Management
+            </h3>
+            <p class="text-blue-100 leading-relaxed">
+              Expert team with decades of experience.
+              Regulatory-compliant operations with dedicated
+              customer support at every step.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section
+      class="py-20 bg-gradient-to-br from-blue-50 to-white"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="bg-gradient-to-r from-blue-900 to-blue-700 rounded-3xl shadow-2xl p-12 md:p-16 text-center text-white relative overflow-hidden"
+        >
+          <div
+            class="absolute top-0 right-0 w-64 h-64 bg-amber-400 rounded-full blur-3xl opacity-20"
+          ></div>
+          <div class="relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+              Ready to Start Your Financial Journey?
+            </h2>
+            <p
+              class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto"
+            >
+              Join thousands of satisfied customers who
+              trust Sovereign Chits for their financial
+              needs
+            </p>
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center"
+            >
+              <a
+                href="{% url 'schemes' %}"
+                class="px-8 py-4 gradient-accent rounded-lg font-bold hover:shadow-2xl transition-all transform hover:scale-105"
+              >
+                View All Schemes
+              </a>
+              <a
+                href="{% url 'contact' %}"
+                class="px-8 py-4 bg-white text-blue-900 rounded-lg font-bold hover:shadow-2xl transition-all"
+              >
+                Contact Us Today
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}
+
